@@ -1,0 +1,62 @@
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="LUIANG MACHINE">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" data-lang="home">首页</a></li>
+                <li><a href="about.html" data-lang="about">关于我们</a></li>
+                <li class="dropdown">
+                    <a href="products.html" data-lang="products">产品中心</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html?category=fuel-dispenser" data-category="fuel-dispenser" data-lang="fuel-dispenser">加油机</a></li>
+                        <li><a href="products.html?category=fuel-dispenser-parts" data-category="fuel-dispenser-parts" data-lang="fuel-dispenser-parts">加油机配件</a></li>
+                        <li><a href="products.html?category=adblue-equipment" data-category="adblue-equipment" data-lang="adblue-equipment">尿素配件</a></li>
+                        <li><a href="products.html?category=industrial-pump" data-category="industrial-pump" data-lang="industrial-pump">工业泵和流量计</a></li>
+                        <li><a href="products.html?category=lpg-equipment" data-category="lpg-equipment" data-lang="lpg-equipment">LPG 配件</a></li>
+                        <li><a href="products.html?category=other-equipment" data-category="other-equipment" data-lang="other-equipment">其他</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" data-lang="blog">博客</a></li>
+                <li><a href="contact.html" data-lang="contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="zh-CN">中文</option>
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <div class="cart-icon">
+                <a href="#" id="cart-toggle">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- 购物车侧边栏 -->
+<div class="cart-sidebar">
+    <div class="cart-header">
+        <h3 data-lang="shopping-cart">购物车</h3>
+        <button class="close-cart">&times;</button>
+    </div>
+    <div class="cart-items">
+        <!-- 购物车项目将动态添加 -->
+    </div>
+    <div class="cart-footer">
+        <button class="btn btn-primary request-quotation" data-lang="request-quotation">请求报价</button>
+    </div>
+</div>

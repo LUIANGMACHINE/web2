@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - LUIANG MACHINE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header和Footer将通过page-loader.js自动加载 -->
+
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-lang="contact-us">联系我们</h1>
+                <p data-lang="contact-desc">我们随时为您提供专业的咨询和服务</p>
+            </div>
+        </section>
+
+        <!-- 联系信息 -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 data-lang="company-name1">连云港路扬配件有限公司</h3>
+                        <p data-lang="address1">江苏省灌云县义凡广场1号楼 222200</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 data-lang="company-name2">路扬配件有限公司</h3>
+                        <p data-lang="address2">上海市灵山路958号5号楼</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3 data-lang="phone">电话</h3>
+                        <p>+86-177 1287 5791</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3 data-lang="email">邮箱</h3>
+                        <p>luiangparts@luiangparts.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系表单和地图 -->
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- 联系表单 -->
+                    <div class="contact-form-section">
+                        <h2 data-lang="send-message">发送消息</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" data-lang="form-name">姓名 *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company" data-lang="form-company">公司名称</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" data-lang="form-email">邮箱 *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" data-lang="form-phone">电话</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-lang="form-subject">主题 *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" data-lang="select-subject">选择咨询主题</option>
+                                    <option value="product" data-lang="subject-product">产品咨询</option>
+                                    <option value="quotation" data-lang="subject-quotation">报价请求</option>
+                                    <option value="technical" data-lang="subject-technical">技术支持</option>
+                                    <option value="partnership" data-lang="subject-partnership">合作咨询</option>
+                                    <option value="other" data-lang="subject-other">其他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-lang="form-message">消息内容 *</label>
+                                <textarea id="message" name="message" rows="6" required data-lang="message-placeholder">请详细描述您的需求...</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-lang="send-message">发送消息</button>
+                        </form>
+                    </div>
+
+                    <!-- 地图 -->
+                    <div class="map-section">
+                        <h2 data-lang="our-location">我们的位置</h2>
+                        <div class="map-container">
+                            <div id="map" style="height: 400px; background: #f5f5f5; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                <div style="text-align: center; padding: 20px;">
+                                    <h3 data-lang="map-loading">地图加载中...</h3>
+                                    <p data-lang="map-desc">连云港路扬配件有限公司位置</p>
+                                    <p data-lang="address1">江苏省灌云县义凡广场1号楼</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-info">
+                            <h3 data-lang="visit-us">来访指南</h3>
+                            <p data-lang="visit-desc">欢迎您前来参观考察，我们提供专业的设备展示和技术讲解服务。</p>
+                            <div class="business-hours">
+                                <h4 data-lang="business-hours">营业时间</h4>
+                                <p data-lang="hours-weekdays">周一至周五: 8:30-17:30</p>
+                                <p data-lang="hours-saturday">周六: 9:00-12:00</p>
+                                <p data-lang="hours-sunday">周日: 休息</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title" data-lang="faq">常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3 data-lang="faq-1-question">如何获取产品报价？</h3>
+                        <p data-lang="faq-1-answer">您可以通过联系我们页面提交询价请求，或直接发送邮件至luiangparts@luiangparts.com，我们会尽快为您提供详细报价。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 data-lang="faq-2-question">产品交货期是多久？</h3>
+                        <p data-lang="faq-2-answer">标准产品交货期为2-4周，具体时间根据产品型号和订单数量确定。紧急订单可协商加急处理。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 data-lang="faq-3-question">是否提供技术支持？</h3>
+                        <p data-lang="faq-3-answer">是的，我们提供全面的技术支持服务，包括产品安装指导、使用培训和故障排除等。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 data-lang="faq-4-question">支持哪些支付方式？</h3>
+                        <p data-lang="faq-4-answer">我们支持TT电汇、信用证等多种支付方式，具体可根据客户需求协商确定。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/language-system.js"></script>
+    <script src="js/page-loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品详情 - LUIANG MACHINE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header和Footer将通过page-loader.js自动加载 -->
+
+    <main>
+        <!-- 产品详情 -->
+        <section class="product-detail">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html" data-lang="home">首页</a> &gt;
+                    <a href="products.html" data-lang="products">产品中心</a> &gt;
+                    <span id="product-category-breadcrumb">产品分类</span> &gt;
+                    <span id="product-name-breadcrumb">产品名称</span>
+                </div>
+
+                <div class="product-detail-content">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img id="main-product-image" src="images/product1.jpg" alt="产品主图">
+                        </div>
+                        <div class="image-thumbnails">
+                            <img src="images/product1.jpg" alt="产品图1" class="thumbnail active">
+                            <img src="images/product2.jpg" alt="产品图2" class="thumbnail">
+                            <img src="images/product3.jpg" alt="产品图3" class="thumbnail">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1 id="product-title">LC型流量计</h1>
+                        <div class="product-meta">
+                            <span class="product-sku" data-lang="sku">产品编号: <span id="product-sku">LC-FM001</span></span>
+                            <span class="product-stock in-stock" data-lang="in-stock">有库存</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$850.00</span>
+                        </div>
+                        <div class="product-description">
+                            <p>高精度LC型流量计，适用于各种工业流体测量。采用先进技术，确保测量准确性和稳定性。</p>
+                        </div>
+                        <div class="product-features">
+                            <h3 data-lang="product-features">产品特点</h3>
+                            <ul>
+                                <li data-lang="feature-high-precision">高精度测量，误差小于±0.5%</li>
+                                <li data-lang="feature-corrosion-resistant">耐腐蚀材料，使用寿命长</li>
+                                <li data-lang="feature-easy-installation">易于安装和维护</li>
+                                <li data-lang="feature-multiple-specs">多种规格可选，满足不同需求</li>
+                            </ul>
+                        </div>
+                        <div class="product-specifications">
+                            <h3 data-lang="specifications">技术规格</h3>
+                            <table>
+                                <tr>
+                                    <td data-lang="spec-material">材质</td>
+                                    <td>不锈钢316L</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="spec-accuracy">精度</td>
+                                    <td>±0.5%</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="spec-pressure">工作压力</td>
+                                    <td>0-2.5MPa</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="spec-temperature">工作温度</td>
+                                    <td>-20°C 至 120°C</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <label data-lang="quantity">数量:</label>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" class="quantity-input">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-large" data-lang="add-to-cart">添加到购物车</button>
+                            <button class="btn btn-secondary request-quote" data-lang="request-quote">请求报价</button>
+                        </div>
+                        <div class="delivery-info">
+                            <p data-lang="delivery-time">预计交货时间: 2-4周</p>
+                            <p class="urgent-notice" data-lang="urgent-delivery">⚠️ 交期紧张，建议提前预订</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品标签 -->
+                <div class="product-tabs">
+                    <div class="tab-headers">
+                        <button class="tab-header active" data-tab="description" data-lang="product-description">产品描述</button>
+                        <button class="tab-header" data-tab="specifications" data-lang="detailed-specs">详细规格</button>
+                        <button class="tab-header" data-tab="applications" data-lang="applications">应用领域</button>
+                        <button class="tab-header" data-tab="downloads" data-lang="downloads">资料下载</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="description">
+                            <h3 data-lang="product-overview">产品概述</h3>
+                            <p>LC型流量计是一款高性能的工业流量测量设备，采用先进的传感技术和精密的制造工艺，确保在各种工况下的稳定性和准确性。</p>
+                            <h3 data-lang="key-features">主要特点</h3>
+                            <ul>
+                                <li data-lang="feature1-detail">高精度测量，满足严格的工业标准</li>
+                                <li data-lang="feature2-detail">宽量程比，适应不同流量范围</li>
+                                <li data-lang="feature3-detail">多种输出信号可选</li>
+                                <li data-lang="feature4-detail">IP67防护等级，适合恶劣环境</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="specifications">
+                            <h3 data-lang="technical-specs">技术规格</h3>
+                            <table class="specs-table">
+                                <tr>
+                                    <th data-lang="spec-parameter">参数</th>
+                                    <th data-lang="spec-value">数值</th>
+                                </tr>
+                                <tr>
+                                    <td data-lang="spec-model">型号</td>
+                                    <td>LC-FM系列</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="spec-measurement">测量范围</td>
+                                    <td>0.5-500 m³/h</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="spec-accuracy">精度等级</td>
+                                    <td>0.5级，1.0级</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="spec-pressure-rating">压力等级</td>
+                                    <td>PN16, PN25, PN40</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="applications">
+                            <h3 data-lang="application-areas">应用领域</h3>
+                            <ul>
+                                <li data-lang="app-petrochemical">石油化工行业</li>
+                                <li data-lang="app-water-treatment">水处理系统</li>
+                                <li data-lang="app-food-beverage">食品饮料行业</li>
+                                <li data-lang="app-pharmaceutical">制药行业</li>
+                                <li data-lang="app-chemical">化学工业</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="downloads">
+                            <h3 data-lang="download-resources">下载资源</h3>
+                            <div class="download-links">
+                                <a href="#" class="download-link" data-lang="download-catalog">产品手册下载</a>
+                                <a href="#" class="download-link" data-lang="download-certificate">认证证书下载</a>
+                                <a href="#" class="download-link" data-lang="download-manual">安装手册下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 相关产品 -->
+        <section class="related-products">
+            <div class="container">
+                <h2 data-lang="related-products">相关产品</h2>
+                <div class="products-grid">
+                    <!-- 相关产品将通过JavaScript动态加载 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/language-system.js"></script>
+    <script src="js/page-loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-details.js"></script>
+</body>
+</html>

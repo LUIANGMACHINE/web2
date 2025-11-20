@@ -1,0 +1,98 @@
+/* 响应式样式补充 */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-slider {
+        height: 500px;
+    }
+    
+    .carousel-slide {
+        gap: 20px;
+    }
+    
+    .product-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .header-actions {
+        gap: 10px;
+    }
+    
+    .language-selector select {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    
+    .hero-slider {
+        height: 400px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0 10px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .hero-slider {
+        height: 300px;
+    }
+    
+    .slide-content {
+        padding: 15px;
+    }
+    
+    .slide-content h2 {
+        font-size: 20px;
+    }
+    
+    .slide-content p {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    .product-carousel-section,
+    .featured-product,
+    .product-categories,
+    .company-advantages {
+        padding: 40px 0;
+    }
+}

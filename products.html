@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品中心 - LUIANG MACHINE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header和Footer将通过page-loader.js自动加载 -->
+
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-lang="products">产品中心</h1>
+                <p data-lang="products-desc">探索我们的高质量工业设备产品线</p>
+            </div>
+        </section>
+
+        <!-- 产品筛选 -->
+        <section class="product-filters">
+            <div class="container">
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label data-lang="filter-by-category">按分类筛选:</label>
+                        <select id="category-filter">
+                            <option value="all" data-lang="all-categories">所有分类</option>
+                            <option value="fuel-dispenser" data-lang="fuel-dispenser">加油机</option>
+                            <option value="fuel-dispenser-parts" data-lang="fuel-dispenser-parts">加油机配件</option>
+                            <option value="adblue-equipment" data-lang="adblue-equipment">尿素配件</option>
+                            <option value="industrial-pump" data-lang="industrial-pump">工业泵和流量计</option>
+                            <option value="lpg-equipment" data-lang="lpg-equipment">LPG 配件</option>
+                            <option value="other-equipment" data-lang="other-equipment">其他</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label data-lang="sort-by">排序方式:</label>
+                        <select id="sort-filter">
+                            <option value="name" data-lang="sort-name">按名称</option>
+                            <option value="price-low" data-lang="sort-price-low">价格从低到高</option>
+                            <option value="price-high" data-lang="sort-price-high">价格从高到低</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品列表 -->
+        <section class="products-listing">
+            <div class="container">
+                <div class="products-grid" id="products-grid">
+                    <!-- 产品将通过JavaScript动态加载 -->
+                </div>
+                <div class="load-more">
+                    <button class="btn btn-primary" id="load-more-btn" data-lang="load-more">加载更多</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品咨询 -->
+        <section class="product-inquiry">
+            <div class="container">
+                <div class="inquiry-content">
+                    <h2 data-lang="need-help">需要产品帮助？</h2>
+                    <p data-lang="inquiry-desc">我们的专家团队随时为您提供专业的产品咨询和技术支持</p>
+                    <a href="contact.html" class="btn btn-primary" data-lang="contact-expert">联系专家</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/language-system.js"></script>
+    <script src="js/page-loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
